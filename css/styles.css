@@ -1,0 +1,50 @@
+#heading {
+  background: linear-gradient( rgba(0, 0, 0, .40), rgba(0, 0, 0, .40) ), url("../img/slice.jpg");
+  background-repeat: no-repeat;
+  background-color: red;
+  background-position: center;
+  height: 700px;
+  margin-bottom: 10px;
+}
+
+#headingText {
+  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 500%;
+  color: white;
+  line-height: 500%;
+}
+
+#headingSubText {
+  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 200%;
+  color: white;
+  text-shadow: 1px 1px 1px;
+}
+
+#intro{
+  height: 380px;
+}
+
+#introHead {
+  text-align: center;
+}
+#brickOven {
+  margin-left: 4.5%;
+  border-radius: 75px 15px;
+}
+
+#optionWell{
+  height: auto;
+}
+
+#pizzaWell{
+  height: 400px;
+}
+
+button {
+  display: block;
+  margin-left: 30%;
+  margin-top: 15px;
+}
