@@ -41,21 +41,32 @@
 }
 
 #pizzaWell{
-  height: 400px;
+  height: auto;
+  text-align: center;
 }
 
+.results {
+  display: none;
+  border-bottom: solid 3px;
+}
+
+.totalPrice{
+  display: none;
+}
 button {
   display: block;
   margin-left: 30%;
   margin-top: 15px;
 }
 
-#pizzaWell {
-  text-align: center;
-}
-
 #placeholder {
   font-family: 'Calligraffitti', cursive;
   font-size: 350%;
   line-height: 500%
+}
+
+
+
+ul{
+  list-style: none;
 }
