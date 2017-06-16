@@ -12,7 +12,8 @@
   font-family: 'Cantarell', sans-serif;
   font-size: 500%;
   color: white;
-  line-height: 500%;
+  line-height: 650%;
+  text-shadow: 1px 1px 1px;
 }
 
 #headingSubText {
@@ -47,4 +48,14 @@ button {
   display: block;
   margin-left: 30%;
   margin-top: 15px;
+}
+
+#pizzaWell {
+  text-align: center;
+}
+
+#placeholder {
+  font-family: 'Calligraffitti', cursive;
+  font-size: 350%;
+  line-height: 500%
 }
