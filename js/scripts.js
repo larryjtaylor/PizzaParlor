@@ -45,7 +45,6 @@ $(document).ready(function(){
   console.log(inputtedName);
   console.log(inputtedSize);
 
-
   var inputtedName = $("input#yourName").val();
   var inputtedSize = $(".size").val();
   var inputtedCheese = $(".cheese").val();
@@ -60,7 +59,7 @@ $(document).ready(function(){
       $('#vegResult').append("<li>" + vegChoice + "</li>");
       });
 
-  var newPizza = new Pizza(inputtedSize, inputtedCheese, inputtedSauce, inputtedCrust, meatChoice, vegChoice1114);
+  var newPizza = new Pizza(inputtedSize, inputtedCheese, inputtedSauce, inputtedCrust, meatChoice, vegChoice);
 
   var total = newPizza.calculate();
   });
