@@ -8,7 +8,7 @@ this.meats = meats;
 this.veggies = veggies;
 }
 
-var pizza = new Pizza();
+// var pizza = new Pizza();
 
 Pizza.prototype.calculate = function(){
   var total = 0;
@@ -31,19 +31,6 @@ Pizza.prototype.calculate = function(){
 $(document).ready(function(){
   $(".pizzaOption").submit(function(event){
   event.preventDefault();
-  // $(".results").empty();
-  $(".results").show();
-  $(".totalPrice").show();
-
-  $(".temporary").hide();
-  $("#custName").text("Customer name: " + inputtedName);
-  $("#sizeResult").text("Size: " + inputtedSize);
-  $("#cheeseResult").text("Cheese: " + inputtedSize);
-  $("#sauceResult").text("Sauce: " + inputtedSize);
-  $("#crustResult").text("Crust: " + inputtedSize);
-  $("#total").text("Total: " + total);
-  console.log(inputtedName);
-  console.log(inputtedSize);
 
   var inputtedName = $("input#yourName").val();
   var inputtedSize = $("#size").val();
@@ -60,7 +47,18 @@ $(document).ready(function(){
       });
 
   var newPizza = new Pizza(inputtedSize, inputtedCheese, inputtedSauce, inputtedCrust, meatChoice, vegChoice);
-
   var total = newPizza.calculate();
+
+  $(".results").show();
+  $(".totalPrice").show();
+
+  $(".temporary").hide();
+  $("#custName").text("Customer name: " + inputtedName);
+  $("#sizeResult").text("Size: " + inputtedSize);
+  $("#cheeseResult").text("Cheese: " + inputtedCheese);
+  $("#sauceResult").text("Sauce: " + inputtedSauce);
+  $("#crustResult").text("Crust: " + inputtedCrust);
+  $("#total").text("Total: " + total);
+  $("#vegResult, #meatResult").clear();
   });
 });
