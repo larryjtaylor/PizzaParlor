@@ -53,20 +53,20 @@
 .totalPrice{
   display: none;
 }
+
 button {
   display: block;
   margin-left: 30%;
   margin-top: 15px;
 }
 
-#placeholder {
+#temporary {
   font-family: 'Calligraffitti', cursive;
   font-size: 350%;
   line-height: 500%
 }
 
 
-
-ul{
+li{
   list-style: none;
 }
