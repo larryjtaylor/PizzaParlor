@@ -59,6 +59,6 @@ $(document).ready(function(){
   $("#sauceResult").text("Sauce: " + inputtedSauce);
   $("#crustResult").text("Crust: " + inputtedCrust);
   $("#total").text("Total: " + total);
-  $("#vegResult, #meatResult").clear();
+  // $("#vegResult, #meatResult").empty();
   });
 });
