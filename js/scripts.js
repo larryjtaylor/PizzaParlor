@@ -11,7 +11,7 @@ this.veggies = veggies;
 var pizza = new Pizza();
 
 Pizza.prototype.calculate = function(){
-  var total = 0
+  var total = 0;
   if (this.size === "Large") {
     total += 16;
   } else if (this.size === "Medium") {
@@ -20,9 +20,9 @@ Pizza.prototype.calculate = function(){
     total += 11;
   }
   if (this.cheese === "Regular") {
-    total += 0;
+    total = total + 0;
   } else if (this.cheese === "Extra") {
-    total += 1;
+    total = total + 1;
   }
   return total;
 };
@@ -41,15 +41,15 @@ $(document).ready(function(){
   $("#cheeseResult").append("Cheese: " + inputtedSize);
   $("#sauceResult").append("Sauce: " + inputtedSize);
   $("#crustResult").append("Crust: " + inputtedSize);
-
+  $("#total").append("Total: " + total);
   console.log(inputtedName);
   console.log(inputtedSize);
 
   var inputtedName = $("input#yourName").val();
-  var inputtedSize = $(".size").val();
-  var inputtedCheese = $(".cheese").val();
-  var inputtedSauce = $(".sauce").val();
-  var inputtedCrust = $(".crust").val();
+  var inputtedSize = $("#size").val();
+  var inputtedCheese = $("#cheese").val();
+  var inputtedSauce = $("#sauce").val();
+  var inputtedCrust = $("#crust").val();
   $("input:checkbox[name=meats]:checked").each(function(){
     var meatChoice = $(this).val();
     $('#meatResult').append("<li>" + meatChoice + "</li>");
