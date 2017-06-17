@@ -31,14 +31,21 @@ Pizza.prototype.calculate = function(){
 $(document).ready(function(){
   $(".pizzaOption").submit(function(event){
   event.preventDefault();
-  // $""("click");
-  $(".temporary").hide();
-  $("#custName").html(inputtedName);
   // $(".results").empty();
-  console.log(inputtedName);
-  console.log(inputtedSize);
   $(".results").show();
   $(".totalPrice").show();
+
+  $(".temporary").hide();
+  $("#custName").append("Customer name: " + inputtedName);
+  $("#sizeResult").append("Size: " + inputtedSize);
+  $("#cheeseResult").append("Cheese: " + inputtedSize);
+  $("#sauceResult").append("Sauce: " + inputtedSize);
+  $("#crustResult").append("Crust: " + inputtedSize);
+
+  console.log(inputtedName);
+  console.log(inputtedSize);
+
+
   var inputtedName = $("input#yourName").val();
   var inputtedSize = $(".size").val();
   var inputtedCheese = $(".cheese").val();

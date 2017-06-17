@@ -38,6 +38,12 @@
 
 #optionWell{
   height: auto;
+  padding: 10%;
+}
+
+.optionHeading{
+  margin-top: -25px;
+  margin-bottom: 10%;
 }
 
 #pizzaWell{
