@@ -36,12 +36,12 @@ $(document).ready(function(){
   $(".totalPrice").show();
 
   $(".temporary").hide();
-  $("#custName").append("Customer name: " + inputtedName);
-  $("#sizeResult").append("Size: " + inputtedSize);
-  $("#cheeseResult").append("Cheese: " + inputtedSize);
-  $("#sauceResult").append("Sauce: " + inputtedSize);
-  $("#crustResult").append("Crust: " + inputtedSize);
-  $("#total").append("Total: " + total);
+  $("#custName").text("Customer name: " + inputtedName);
+  $("#sizeResult").text("Size: " + inputtedSize);
+  $("#cheeseResult").text("Cheese: " + inputtedSize);
+  $("#sauceResult").text("Sauce: " + inputtedSize);
+  $("#crustResult").text("Crust: " + inputtedSize);
+  $("#total").text("Total: " + total);
   console.log(inputtedName);
   console.log(inputtedSize);
 
@@ -50,11 +50,11 @@ $(document).ready(function(){
   var inputtedCheese = $("#cheese").val();
   var inputtedSauce = $("#sauce").val();
   var inputtedCrust = $("#crust").val();
-  $("input:checkbox[name=meats]:checked").each(function(){
+  var meatChoice = $("input:checkbox[name=meats]:checked").each(function(){
     var meatChoice = $(this).val();
     $('#meatResult').append("<li>" + meatChoice + "</li>");
     });
-    $("input:checkbox[name=veggies]:checked").each(function(){
+  var vegChoice = $("input:checkbox[name=veggies]:checked").each(function(){
       var vegChoice = $(this).val();
       $('#vegResult').append("<li>" + vegChoice + "</li>");
       });
